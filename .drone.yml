@@ -10,6 +10,6 @@ steps:
       - python -m pip install -r requirements.txt
       - flake8
 when:
-  event:
-    include:
-    - push
+  repo:
+    exclude:
+    - DLL-Dev-test/conditions
